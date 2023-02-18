@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_firebase/scratcher_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +25,10 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const ScratcherTile(
+        title: 'Flutter Demo Home Page',
+        image: 'lib/assets/Scratch_Card.png',
+      ),
     );
   }
 }
