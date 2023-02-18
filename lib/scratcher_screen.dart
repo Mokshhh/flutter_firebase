@@ -28,7 +28,14 @@ class _ScratcherTileState extends State<ScratcherTile> {
                     child: Center(
                       child: Text("Congratulations! You won ₹1"),
                     )),
-              )
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(
+                      context); // Navigate back to first route when tapped.
+                },
+                child: const Text('Go back!'),
+              ),
             ]),
       ),
     );
